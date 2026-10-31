@@ -731,7 +731,7 @@ class Component extends DCLogic {
       panelX: s.menuOpen ? 'translateX(0)' : 'translateX(100%)',
       // ▼ 外部リンクのURL（変更するときはここだけ書き換える。README「設定値の変え方」）
       //   lineUrl＝公式LINE／instaUrl＝Instagram／tiktokUrl＝TikTok／corpUrl＝会社ホームページ／contactUrl＝お問い合わせページ
-      lineUrl: this.props.lineUrl && this.props.lineUrl !== '#' ? this.props.lineUrl : 'https://page.line.me/128ycaln?openQrModal=true',
+      lineUrl: this.props.lineUrl && this.props.lineUrl !== '#' ? this.props.lineUrl : 'https://lin.ee/tp1AEsz',
       instaUrl: 'https://www.instagram.com/aquros_matsudo/?igshid=YmMyMTA2M2Y%3D',
       tiktokUrl: 'https://www.tiktok.com/@aquros7?_r=1&_t=ZS-94j6lUjKsb3',
       corpUrl: 'https://xn--cck0a4a9n.com/',
@@ -754,7 +754,7 @@ class Component extends DCLogic {
         { num: '03', t1: '自分に合った', t2: '働き方を選べる', alt: '自分に合った働き方を選べる', text: '自分のスキルやスタイルに合わせて案件を割り振るため、働きやすい環境です。', img: 'assets/ben3.webp', pos: '50% 40%', phase: 3 },
         { num: '04', t1: '現場に集中できる', t2: '環境', alt: '現場に集中できる環境', text: '案件は会社からご案内するので、現場での対応に集中できます。', img: 'assets/ben4.webp', pos: '45% 55%', phase: 4.5 },
       ].map((b, i) => ({ ...b, scale: i === ci ? 1 : 0.92, op: i === ci ? 1 : 0.6 })),
-      recruitRows: [['職種','水道設備メンテナンス\n各種リフォーム'],['契約形態','業務委託'],['報酬','案件ごとの完全歩合制\n月平均40万円～\n※月100万円も目指せます'],['対応エリア','首都圏近郊'],['求める人物','やる気と愛嬌のある方\n経験者優遇']].map(([k, v], i) => ({ k, v, line: i ? '1px solid #d3e7fb' : '0' })),
+      recruitRows: [['職種','水道設備メンテナンス\n各種リフォーム'],['契約形態','業務委託'],['報酬','案件ごとの完全歩合制\n月平均40万円～\n※月100万円も目指せます'],['対応エリア','首都圏近郊'],['必須条件','運転免許'],['求める人物','やる気と愛嬌のある方\n経験者優遇']].map(([k, v], i) => ({ k, v, line: i ? '1px solid #d3e7fb' : '0' })),
       // ct：番号の円の上の余白、tt：見出しの上の余白、pm：本文の上の余白、pb：カード下の余白（Figma 自由版の位置）
       flow: [
         { num: '01', title: 'ご応募', text: '公式LINEを友だち追加し、\nメッセージでご応募ください。', cta: true, notFirst: false, ct: '18px', tt: '10.75px', pm: '2.96px', pb: '23px', fs: '15px' },
